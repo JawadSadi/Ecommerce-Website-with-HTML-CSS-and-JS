@@ -534,6 +534,103 @@ footer .copyright {
   text-align: center;
 }
 
+/* Shop Page */
+
+#pageHeader {
+  background-image: url("img/banner/b1.jpg");
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-size: cover;
+}
+
+#pageHeader h2,
+#pageHeader p {
+  color: #fff;
+}
+
+#pagination {
+  text-align: center;
+}
+#pagination a {
+  text-decoration: none;
+  padding: 15px 20px;
+  background-color: #088178;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+#pagination a ion-icon {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+/* SINGLE PRODUCT*/
+
+#productDetails {
+  display: flex;
+  margin-top: 20px;
+}
+
+#productDetails .singleImage {
+  width: 40%;
+  margin-right: 50px;
+}
+
+.imgGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.smallImgCol {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#productDetails .details {
+  width: 50%;
+  padding-top: 30px;
+}
+
+#productDetails .details h4 {
+  padding: 40px 0px 20px 0px;
+}
+
+#productDetails .details h2 {
+  font-size: 26px;
+}
+
+#productDetails .details select {
+  padding: 5px 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#productDetails .details input {
+  width: 50px;
+  height: 46px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#productDetails .details input:focus {
+  outline: none;
+}
+
+#productDetails .details span {
+  line-height: 25px;
+}
+
+#productDetails .details button {
+  background-color: #088178;
+  color: #fff;
+}
+
 @media (max-width: 799px) {
   .section-p1 {
     padding: 40px 40px;
@@ -668,5 +765,18 @@ footer .copyright {
   }
   footer .copyright {
     text-align: start;
+  }
+
+  /* Single Product */
+
+  #productDetails {
+    display: flex;
+    flex-direction: column;
+  }
+  #productDetails .singleImage {
+    width: 100%;
+  }
+  #productDetails .details {
+    width: 100%;
   }
 }
