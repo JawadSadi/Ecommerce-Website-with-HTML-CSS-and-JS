@@ -14,10 +14,12 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li class="bag">
-            <a href="cart.html"><ion-icon name="bag-outline"></ion-icon></a>
+            <a href="cart.html" class="active"
+              ><ion-icon name="bag-outline"></ion-icon
+            ></a>
           </li>
           <a href="#" class="close"><ion-icon name="close"></ion-icon></a>
         </ul>
@@ -29,78 +31,82 @@
         <ion-icon name="reorder-four" id="bar"></ion-icon>
       </div>
     </section>
-    <section id="pageHeader" class="aboutHeader">
-      <h2>#KnowUs</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <section id="pageHeader" class="contactHeader">
+      <h2>#let's talk</h2>
+      <p>Leave A Message, We love to hear from you!</p>
     </section>
-    <section id="aboutHead" class="section-p1">
-      <img src="img/about/a6.jpg" alt="" />
-      <div>
-        <h2>Who We Are?</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-          perferendis voluptates similique voluptas dignissimos ex ipsa
-          asperiores, repellat enim laudantium iusto veniam adipisci deleniti
-          vitae! In nihil doloremque iure magnam!repellat enim laudantium iusto
-          veniam adipisci deleniti vitae! In nihil doloremque iure magnam!
-
-          <abbr title=""
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
-            optio blanditiis? Necessitatibus esse earum ipsa repudiandae.</abbr
-          >
-
-          <br /><br />
-
-          <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            accusantium blanditiis dicta?
-          </marquee>
-        </p>
-      </div>
+    <section id="cart" class="section-p1">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>Remove</td>
+            <td>Image</td>
+            <td>Product</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Subtotal</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="#"><ion-icon name="close-circle-outline"></ion-icon></a>
+              <td><img src="img/products/f1.jpg" alt=""></td>
+              <td>Cartoon Astrone T-Shirt</td>
+              <td>$118,19</td>
+              <td><input type="number" value="1"></td>
+              <td>$118,19</td>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#"><ion-icon name="close-circle-outline"></ion-icon></a>
+              <td><img src="img/products/f2.jpg" alt=""></td>
+              <td>Cartoon Astrone T-Shirt</td>
+              <td>$118,19</td>
+              <td><input type="number" value="1"></td>
+              <td>$118,19</td>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#"><ion-icon name="close-circle-outline"></ion-icon></a>
+              <td><img src="img/products/f3.jpg" alt=""></td>
+              <td>Cartoon Astrone T-Shirt</td>
+              <td>$118,19</td>
+              <td><input type="number" value="1"></td>
+              <td>$118,19</td>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </section>
-    <section id="aboutApp" class="section-p1">
-      <h1>Download Our <a href="#">App</a></h1>
-      <div class="video">
-        <video autoplay muted loop src="img/about/1.mp4"></video>
-      </div>
-    </section>
-    <section id="features" class="section-p1">
-      <div class="featuresBox">
-        <img src="img/features/f1.png" alt="" />
-        <h6>Free Shipping</h6>
-      </div>
-      <div class="featuresBox">
-        <img src="img/features/f2.png" alt="" />
-        <h6>Online Order</h6>
-      </div>
-      <div class="featuresBox">
-        <img src="img/features/f3.png" alt="" />
-        <h6>Save Money</h6>
-      </div>
-      <div class="featuresBox">
-        <img src="img/features/f4.png" alt="" />
-        <h6>Promotions</h6>
-      </div>
-      <div class="featuresBox">
-        <img src="img/features/f5.png" alt="" />
-        <h6>Happy Sell</h6>
-      </div>
-      <div class="featuresBox">
-        <img src="img/features/f6.png" alt="" />
-        <h6>F24/7 Supports</h6>
-      </div>
-    </section>
-    <section id="newsletter" class="section-p1 section-m1">
-      <div class="newstext">
-        <h4>Sign Up For Newsletters</h4>
-        <p>
-          Get E-mail updates about our latest shop <span>special offers</span>.
-        </p>
-      </div>
-      <div class="form">
-        <input type="text" placeholder="Your email address" />
-        <button class="normal">Sign Up</button>
-      </div>
+    <section id="cartAdd" class="section-p1">
+        <div class="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div class="subTotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$335</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$335</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
+        </div>
     </section>
     <footer class="section-p1">
       <div class="col">
