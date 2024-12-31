@@ -729,6 +729,111 @@ footer .copyright {
   height: 100%;
   border-radius: 20px;
 }
+
+/* CONTACT PAGE */
+
+#pageHeader.contactHeader {
+  background-image: url("img/about/banner.png");
+}
+#contactDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#contactDetails .details {
+  width: 45%;
+  padding-right: 10px;
+}
+
+#contactDetails .details span,
+#formDetails form span {
+  font-size: 12px;
+}
+#contactDetails .details h2,
+#formDetails form h2 {
+  font-size: 26px;
+  padding: 20px 0;
+  line-height: 35px;
+}
+
+#contactDetails .details h3 {
+  font-size: 16px;
+  padding-bottom: 14px;
+}
+#contactDetails .details li {
+  list-style-type: none;
+  display: flex;
+  padding: 10px 0px;
+}
+#contactDetails .details li ion-icon {
+  font-size: 14px;
+  padding-right: 22px;
+}
+#contactDetails .details li p {
+  font-size: 14px;
+  margin: 0;
+}
+#contactDetails .map {
+  width: 60%;
+  height: 400px;
+  border: 1px solid #b2bac5;
+  border-radius: 2px;
+}
+#contactDetails .map iframe {
+  width: 100%;
+  height: 100%;
+}
+#formDetails {
+  display: flex;
+  padding: 80px;
+  justify-content: space-between;
+  border: 1px solid #e1e1e1;
+  margin: 20px;
+}
+#formDetails form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#formDetails form input,
+#formDetails form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+}
+#formDetails form button {
+  background-color: #088178;
+  color: #fff;
+}
+#formDetails .people div {
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+}
+
+#formDetails .people div img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+#formDetails .people div p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+#formDetails .people div p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
 @media (max-width: 820px) {
   .section-p1 {
     padding: 40px 40px;
@@ -824,6 +929,15 @@ footer .copyright {
   p {
     font-size: 14px;
     line-height: 20px;
+  }
+
+  /* CONTACT PAGE */
+  #formDetails {
+    display: flex;
+    padding: 40px;
+  }
+  #formDetails form {
+    width: 50%;
   }
 }
 
@@ -924,5 +1038,27 @@ footer .copyright {
   }
   #aboutApp .video {
     width: 100%;
+  }
+  /* CONTACT PAGE */
+
+  #contactDetails {
+    flex-direction: column;
+  }
+  #contactDetails .details {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #contactDetails .map {
+    width: 100%;
+  }
+  #formDetails {
+    display: flex;
+    padding: 30px 10px;
+    margin: 10px;
+    flex-wrap: wrap;
+  }
+  #formDetails form {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
